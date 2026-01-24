@@ -35,7 +35,7 @@ plantalk.pl assumes to work in de novo transcriptiome analysis composed of trini
 
 Output:
 
-GOlofFC_sorted.txt
+GOlogFC_sorted.txt
   may contain a list of GO term and average expression ratio of genes with the GO term in log(foldchange).
 
 effective_genes.fasta
