@@ -5,10 +5,11 @@ A tool to process transcriptome data into a list of GO term and the expression r
 
 Usage: 
 
+```bash
 perl plantalk.pl  
-`  --geneseq [trinity output]  
-`  --proteinseq [transdecoder output]  
-`  --annotation [eggNOG output]  
+  --geneseq [trinity output]  
+  --proteinseq [transdecoder output]  
+  --annotation [eggNOG output]  
   --geneontology go-basic.obo  
   --expression [salmon output]  
   --experimentals [sample number and/or sample names]  
@@ -17,6 +18,7 @@ perl plantalk.pl
   -show_sample_names (optional)  
   --max_genes [float] (optional: 0.03 default)  
   --min_genes [int] (optional: 4 default)  
+```
 
 Requires:
 
@@ -73,6 +75,9 @@ Required Options:
   example: --experimtnals 1 2 3 stimulated4 --controls 9 10 11 control5 placebo6 
 
 Optional Options.
+
+-help
+  to show help
 
 -show_sample_names  
   to show sample numbers and/or names of samples applicable in --experimentals and --controls fields.  
