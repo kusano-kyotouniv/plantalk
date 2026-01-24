@@ -52,15 +52,15 @@ Only download and put plantalk.pl in your working directory and run with require
 
 ```text
 --geneseq <trinity output>  
-  nucleotide sequence data in fasta format with trinity contig name format.  
+  nucleotide sequence file in fasta format with trinity contig name format.  
   example contig name is like: abcde12345_c0_g1_i2
   
 --proteinseq <transdecoder output>  
-  amino acid sequence data in fasta format with transdecoder protein name format.  
+  amino acid sequence file in fasta format with transdecoder protein name format.  
   example protein name is like: abcde12345_c1_g0_i4_p2
 
 --annotation <eggNOG output>  
-  eggNOG mapper output.  
+  eggNOG mapper output file.  
   example file name is like: prefix.emapper.annotations
 
 --geneontology go-basic.obo  
@@ -68,7 +68,7 @@ Only download and put plantalk.pl in your working directory and run with require
   You can download go-basic.obo from the website.
 
 --expression <salmon output>  
-  "salmon quantmerge --column TPM" output.  
+  "salmon quantmerge --column TPM" output file .  
   The order and the name of samples provided in the "--quants" field of salmon quantmerge is acceptable in --experimentals and --controls fields.
   
 --experimentals <sample number and/or sample names>  
