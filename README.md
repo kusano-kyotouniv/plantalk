@@ -1,11 +1,12 @@
 # plantalk
 A tiny gene ontology (GO) analysis tool
 
-Usage: 
+# Usage: 
 
 ```text
-perl plantalk.pl [Options] <inputs>
+perl plantalk.pl [options] <inputs> 
 
+options:
   --geneseq <trinity output>          (required)
   --proteinseq <transdecoder output>  (required)
   --annotation <eggNOG output>        (required)
@@ -20,11 +21,11 @@ perl plantalk.pl [Options] <inputs>
   -help  
 ```
 
-Requires:
+# Requires:
 
 Any libraries are NOT required to run the plantalk.pl, may run in most of default environment of perl.
 
-Required Input Files:
+# Required Input Files:
 
 plantalk.pl assumes to work in de novo transcriptiome analysis composed of trinity, transdecoder, salmon, and eggNOG mapper.
 
@@ -35,7 +36,7 @@ plantalk.pl assumes to work in de novo transcriptiome analysis composed of trini
 5) expression analysis data containing experimental and control samples, representatively salmon merge format
   containing experimental and control samples, in a pair at least.
 
-Output:
+# Output:
 
 GOlogFC_sorted.txt  
   may contain a list of GO term and average expression ratio of genes with the GO term in log(foldchange).
@@ -43,11 +44,11 @@ GOlogFC_sorted.txt
 effective_genes.fasta  
   may contain a non-redundant nucleotide sequence data, to run plantalk.pl again with a new salmon result using this non-redundant inputs, for better result. In the de novo transcriptome analysis, this re-analysis is strongly recommened because the contig redundancy in a gene may affect the count of GO assignments without any biological meanings.
 
-Installation:
+# Installation:
 
 Only download and put plantalk.pl in your working directory and run with required options.
 
-Required Options:
+# Required Options:
 
 ```text
 --geneseq <trinity output>  
@@ -76,7 +77,7 @@ Required Options:
   example: --experimtnals 1 2 3 stimulated4 --controls 9 10 11 control5 placebo6 
 ```
 
-Optional Options:
+# Optional Options:
 
 ```text
 -help
@@ -99,11 +100,11 @@ Optional Options:
   The default 4 means GOs assigned less than 4 contigs (genes) are excluded.  
 ```
 
-Example:
+# Example:
 
 Example of the usage in our Youtube channel https://www.youtube.com/channel/UCfyffGF-4CZ9_IlnURPkZ1A
 
-Disclaimer
+# Disclaimer
 
 This software is provided "as is" and is intended for research purposes only.
 It is not intended for clinical, diagnostic, or therapeutic use.
@@ -124,7 +125,7 @@ Any demonstrations or explanations provided in accompanying videos or materials
 are for illustrative and educational purposes only and do not constitute
 recommendations or guarantees regarding the use or interpretation of the results.
 
-免責事項
+# 免責事項
 
 本ツールは研究および教育目的での使用を前提としており、診断・治療・臨床判断を
 目的とした利用を想定していません。
