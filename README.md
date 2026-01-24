@@ -1,8 +1,6 @@
 # plantalk
 A tiny gene ontology (GO) analysis tool
 
-A tool to process transcriptome data into a list of GO term and the expression ratio average.
-
 Usage: 
 
 ```text
@@ -15,7 +13,6 @@ perl plantalk.pl [Options] <inputs>
   --expression <salmon output>        (required)
   --experimentals <int1/string1> <int2/string2> ...    (required)
   --controls <int1/string1> <int2/string2> ...         (required)
-  
   --output <output directory>  
   -show_sample_names  
   --max_genes <float>  
