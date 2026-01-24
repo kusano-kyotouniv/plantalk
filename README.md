@@ -6,7 +6,8 @@ A tool to process transcriptome data into a list of GO term and the expression r
 Usage: 
 
 ```bash
-perl plantalk.pl  
+perl plantalk.pl  <Options> [inputs]
+```
   --geneseq [trinity output]  
   --proteinseq [transdecoder output]  
   --annotation [eggNOG output]  
@@ -18,7 +19,7 @@ perl plantalk.pl
   -show_sample_names (optional)  
   --max_genes [float] (optional: 0.03 default)  
   --min_genes [int] (optional: 4 default)  
-```
+  -help  
 
 Requires:
 
