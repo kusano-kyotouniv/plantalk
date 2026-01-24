@@ -1,7 +1,7 @@
 # plantalk
 A tiny gene ontology (GO) analysis tool
 
-A tool to process transcriptome data into a list of GO term and expression ratio average.
+A tool to process transcriptome data into a list of GO term and the expression ratio average.
 
 Usage: 
 
@@ -20,8 +20,7 @@ perl plantalk.pl
 
 Requires:
 
-Any libraries are NOT required to run the plantalk.pl.
-plantalk.pl may run in default environment of perl.
+Any libraries are NOT required to run the plantalk.pl, may run in most of default environment of perl.
 
 Required Input Files:
 
