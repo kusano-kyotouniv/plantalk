@@ -24,7 +24,7 @@ Any libraries are NOT required to run the plantalk.pl, may run in most of defaul
 
 Required Input Files:
 
-plantalk.pl assumes to work in a de novo transcriptiome analysis composed of trinity, transdecoder, salmon, eggNOG mapper.
+plantalk.pl assumes to work in de novo transcriptiome analysis composed of trinity, transdecoder, salmon, and eggNOG mapper.
 
 1) nucleotide sequence data with contig name in Trinity output format (Trinity.fasta, representative)
 2) protein sequence data in transdecoder output format (prefix.transdecoder.pep, representative)
