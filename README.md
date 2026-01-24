@@ -5,10 +5,10 @@ A tool to process transcriptome data into a list of GO term and the expression r
 
 Usage: 
 
-```bash
-perl plantalk.pl  [Options] <inputs>
+```text
+perl plantalk.pl [Options] <inputs>
 
-  --geneseq <trinity output>  
+  --geneseq <trinity output>  (required)
   --proteinseq <transdecoder output>  
   --annotation <eggNOG output>  
   --geneontology go-basic.obo  
@@ -52,15 +52,16 @@ Only download and put plantalk.pl in your working directory and run with require
 
 Required Options:
 
---geneseq [trinity output]  
+```text
+--geneseq <trinity output>  
   nucleotide sequence data in fasta format with trinity contig name format.  
   example contig name is like: abcde12345_c0_g1_i2
   
---proteinseq [transdecoder output]  
+--proteinseq <transdecoder output>  
   amino acid sequence data in fasta format with transdecoder protein name format.  
   example protein name is like: abcde12345_c1_g0_i4_p2
 
---annotation [eggNOG output]  
+--annotation <eggNOG output>  
   eggNOG mapper output.  
   example file name is like: prefix.emapper.annotations
 
@@ -68,17 +69,19 @@ Required Options:
   go-basic.obo is provided by Gene Ontology Resource (https://geneontology.org/).  
   You can download go-basic.obo from the website.
 
---expression [salmon output]  
+--expression <salmon output>  
   "salmon quantmerge --column TPM" output.  
   The order and the name of samples provided in the "--quants" field of salmon quantmerge is acceptable in --experimentals and --controls fields.
   
---experimentals [sample number and/or sample names]  
---controls [sample number and/or sample names]  
+--experimentals <sample number and/or sample names>  
+--controls <sample number and/or sample names>  
   The order number and the name of samples provided in the "--quants" field of salmon quantmerge.  
   example: --experimtnals 1 2 3 stimulated4 --controls 9 10 11 control5 placebo6 
+```
 
-Optional Options.
+Optional Options:
 
+```text
 -help
   to show help
 
@@ -86,17 +89,18 @@ Optional Options.
   to show sample numbers and/or names of samples applicable in --experimentals and --controls fields.  
   The successfully selected samples are marked with asterisks.
 
---output [output directory]  
+--output <output directory>  
   to set another directory name to output the result files.  
   The default directory name is "plantalk_result".
 
---max_genes [float] (optional: 0.03 default)  
+--max_genes <float>  
   to exclude GO terms assigned to too many contigs (genes).  
   The default 0.03 means GOs assigned over 3% of total contigs (genes) are excluded.
 
---min_genes [int] (optional: 4 default)  
+--min_genes <int>  
   to exclude GO terms assigned to too few contigs (genes).  
   The default 4 means GOs assigned less than 4 contigs (genes) are excluded.  
+```
 
 Example:
 
