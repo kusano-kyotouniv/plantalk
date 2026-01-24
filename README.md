@@ -8,19 +8,19 @@ Usage:
 ```text
 perl plantalk.pl [Options] <inputs>
 
-  --geneseq <trinity output>  (required)
-  --proteinseq <transdecoder output>  
-  --annotation <eggNOG output>  
-  --geneontology go-basic.obo  
-  --expression <salmon output>  
-  --experimentals <sample number and/or sample names>  
-  --controls <sample number and/or sample names>  
+  --geneseq <trinity output>          (required)
+  --proteinseq <transdecoder output>  (required)
+  --annotation <eggNOG output>        (required)
+  --geneontology go-basic.obo         (required)
+  --expression <salmon output>        (required)
+  --experimentals <int1/string1> <int2/string2> ...    (required)
+  --controls <int1/string1> <int2/string2> ...         (required)
   
-  [--output <output directory>]  
-  [-show_sample_names]  
-  [--max_genes <float>]  
-  [--min_genes <int>]  
-  [-help]  
+  --output <output directory>  
+  -show_sample_names  
+  --max_genes <float>  
+  --min_genes <int>  
+  -help  
 ```
 
 Requires:
