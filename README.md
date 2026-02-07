@@ -1,5 +1,7 @@
 # plantalk
 A tiny gene ontology (GO) analysis tool
+You can see Youtube movie explaining the use and how to use plantalk.pl
+https://youtu.be/_j6EE4oJw1U
 
 # Usage: 
 
@@ -73,7 +75,7 @@ Only download and put plantalk.pl in your working directory and run with require
   
 --experimentals <sample number and/or sample names>  
 --controls <sample number and/or sample names>  
-  The order number and the name of samples provided in the "--quants" field of salmon quantmerge.  
+  The sample number and/or the name that you provided in the "--quants" field of salmon quantmerge.  
   example: --experimtnals 1 2 3 stimulated4 --controls 9 10 11 control5 placebo6 
 ```
 
