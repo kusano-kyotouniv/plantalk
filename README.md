@@ -1,9 +1,5 @@
 # plantalk
-A tiny gene ontology (GO) analysis tool  
-  
-You can see following Youtube movie explaining the use and how to use plantalk.pl:  
-こちらのYoutube動画で何のツールかとか使い方を解説しています：  
-https://youtu.be/_j6EE4oJw1U
+A tiny gene ontology (GO) analysis tool
 
 # Usage: 
 
@@ -106,7 +102,9 @@ Only download and put plantalk.pl in your working directory and run with require
 
 # Example:
 
-Example of the usage in our Youtube channel https://www.youtube.com/channel/UCfyffGF-4CZ9_IlnURPkZ1A
+Example of the usage in our Youtube movie:  
+こちらのYoutube動画で使用例を解説しています：  
+https://youtu.be/_j6EE4oJw1U
 
 # Disclaimer
 
